@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>telivision</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {
+display:none;
+width:50%;
+border-color:blue;
+}
+</style>
+</head>
+<body>
+<h2> about telivision</h2>
+<div>
+<img class="myslides" src="https://images.samsung.com/is/image/samsung/p6pim/in/ua43cue70aklxl/gallery/in-crystal-uhd-cu7000-471711-ua43cue70aklxl-537527812?$730_584_PNG$.jpg" alt="TV" height="400" width="100">
+
+<img class="myslides" src="https://m.media-amazon.com/images/I/41WE9ZGEC4L._SX300_SY300_QL70_FMwebp_.jpg" alt="TV" height="500" width="100">
+
+<img class="myslides" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSm7UM2O6f4NhQeQqLjB46DQlt-B2EMpHvbUvneBsHWNQvfyLV4W83n_UzykLxhC7DmlkwqVDRpRPA-rtRaV4hvX0LcExFKz--czl6Wj3h-l-Q16cCJth7O" alt="TV" height="500" width="100">
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+</html>
